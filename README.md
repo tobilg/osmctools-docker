@@ -7,6 +7,6 @@ You can have a look at the [Osmctools documentation](https://wiki.openstreetmap.
 
 For example, you can use the Docker image like this to unify two PBF files to a single PBF file:
 
-´´´bash
+```bash
 $ docker run -v $(pwd)/data:/data tobilg/osmctools /bin/sh -c "osmconvert /data/region1.pbf --out-o5m | osmconvert - /data/region2.pbf -o=/data/all.pbf"
-´´´ 
+```
